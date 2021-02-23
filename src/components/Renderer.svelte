@@ -1,7 +1,4 @@
-<script>
 import { title } from "process";
-
-</script>
 {#if title}
     <h1 class="text-3xl mb-3">{title}</h1>
 {:else}
@@ -16,7 +13,6 @@ import { title } from "process";
 </div>
 
 <script>
-    // exporting props
     export let title = ''
     export let content = ''
 </script>
