@@ -27,7 +27,7 @@ module.exports = {
                     options: {
                         emitCss: true,
                         hotReload: true,
-                        dev: !prod
+                        dev: true,
                     }
                 }
             },
