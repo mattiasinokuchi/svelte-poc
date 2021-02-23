@@ -1,12 +1,4 @@
-<h1>Hello, {name}!</h1>
-<p>My first Svelte app</p>
-
-<style>
-    p {
-        color: #1d4585
-    }
-</style>
-
+<Renderer title="Hello" content="World!" />
 <script>
-    export let name = ''
+    import Renderer from "./components/Renderer.svelte";
 </script>
