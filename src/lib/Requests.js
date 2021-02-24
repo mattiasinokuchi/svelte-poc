@@ -1,3 +1,5 @@
+// This file contains functions that make requests to the back-end API server
+
 /**
  * Requests an object from the server
  * @param {string} oid - ID of the object to request

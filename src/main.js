@@ -8,7 +8,7 @@ const app = (async function() { // Immediately Invoked Function Expression requi
     profile.set(profileData || null)
     token.set(tokenData || null)
 
-    return new App({    // initializing App component
+    return new App({    // Initialize App component
         target: document.body
     })
 })()

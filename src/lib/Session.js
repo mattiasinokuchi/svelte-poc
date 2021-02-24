@@ -1,3 +1,4 @@
+// This file contains functions for validating session tokens passed by the authentication server
 import IdTokenVerifier from 'idtoken-verifier'
 
 /**
