@@ -1,4 +1,3 @@
-import { title } from "process";
 {#if title}
     <h1 class="text-3xl mb-3">{title}</h1>
 {:else}
