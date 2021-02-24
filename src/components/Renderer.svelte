@@ -5,7 +5,7 @@
 {/if}
 <div class="rendered">
     {#if content}
-        {@html rendered}    <!--indicate to Svelte that rendered contains HTML tags that should be rendered by the browser (not rendered by default to prevent XSS)-->
+        {@html rendered}    <!--tell Svelte HTML tags should be rendered by the browser (not rendered by default to prevent XSS)-->
     {:else}
         <p class="text-gray-600">No content</p>
     {/if}
