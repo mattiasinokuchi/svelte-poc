@@ -5,7 +5,7 @@
 {/if}
 <div class="rendered">
     {#if content}
-        {content}
+        {@html rendered}    <!--indicate to Svelte that rendered contains HTML tags that should be rendered by the browser (not rendered by default to prevent XSS)-->
     {:else}
         <p class="text-gray-600">No content</p>
     {/if}
@@ -14,4 +14,7 @@
 <script>
     export let title = ''
     export let content = ''
+    import MarkdownIt from 'markdown-it'    // Module for converting Markdown into HTML
+    const markdown = new MarkdownIt()
+    $: rendered = markdown.render(content)
 </script>
