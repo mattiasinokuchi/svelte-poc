@@ -1,3 +1,5 @@
+// Entrypoint for the application
+
 import './global.css'
 import {HandleSession} from './lib/Session.js'
 import {profile, token} from './stores' // importing file for storing profile and token

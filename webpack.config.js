@@ -15,7 +15,7 @@ module.exports = {
         extensions: ['.mjs', '.js', '.svelte'],
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
-    output: {   // Compiled files (bundle.js) are placed in the public folder
+    output: {   // Compiled files (bundle.js and bundle.css) are placed in the public folder
         path: path.resolve(__dirname, 'public'),
         filename: '[name].js',
         chunkFilename: '[name].[id].js'

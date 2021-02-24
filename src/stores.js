@@ -1,3 +1,5 @@
+// This file contains the profile and token shared across the components
+
 import {writable, derived} from 'svelte/store'
 export const profile = writable(null)
 export const token = writable(null)
