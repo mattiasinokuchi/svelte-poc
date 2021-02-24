@@ -1,3 +1,4 @@
+<!--This component renders journal entries and the Markdown syntax-->
 {#if title}
     <h1 class="text-3xl mb-3">{title}</h1>
 {:else}
@@ -5,7 +6,7 @@
 {/if}
 <div class="rendered">
     {#if content}
-        {@html rendered}    <!--tell Svelte HTML tags should be rendered by the browser (not rendered by default to prevent XSS)-->
+        {@html rendered}    <!--tells Svelte HTML tags should be rendered (not rendered by default to prevent XSS)-->
     {:else}
         <p class="text-gray-600">No content</p>
     {/if}
