@@ -17,5 +17,5 @@ import {LoadObject} from '../lib/Requests.js'
 import {token} from '../stores.js'
 export let objectId = null
 let contentPromise = Promise.resolve({})
-$: contentPromise = LoadObject(objectId, $token)    // Reactive statement which request an object upon changes
+$: contentPromise = LoadObject(objectId, $token)    // Reactive statement to trigger a request upon changes
 </script>
