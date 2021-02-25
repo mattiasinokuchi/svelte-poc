@@ -1,5 +1,7 @@
-<Calendar bind:date />
-<List bind:date />
+<div in:fade>
+    <Calendar bind:date />
+    <List bind:date />    
+</div>
 
 <script>
 import Calendar from './Calendar.svelte'

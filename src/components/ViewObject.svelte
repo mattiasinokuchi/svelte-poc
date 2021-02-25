@@ -1,4 +1,6 @@
-<Obj {objectId} />
+<div in:fade>
+    <Obj {objectId} />
+</div>
 
 <script>
 import Obj from './Obj.svelte'
