@@ -33,6 +33,7 @@
   "dependencies": {
     "idtoken-verifier": "^2.1.0",
     "markdown-it": "^11.0.1",
-    "svelte-calendar": "^1.5.0"
+    "svelte-calendar": "^1.5.0",
+    "svelte-spa-router": "^2.2.0"
   }
 }
