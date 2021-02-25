@@ -40,7 +40,7 @@
 import {AddRequest} from '../lib/Requests.js'
 import {token} from '../stores.js'
 
-// Dispatcher
+// The createEventDispatcher method is used to trigger custom events from a component (unlike from an element)
 import {createEventDispatcher} from 'svelte'
 const dispatch = createEventDispatcher()
 
