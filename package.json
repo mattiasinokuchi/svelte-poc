@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server --content-base public",
-    "serve": "npx serve -n -1 5000 public",
+    "serve": "npx serve public",
     "test": "npx nightwatch"
   },
   "repository": {
