@@ -1,4 +1,5 @@
 <!--This component renders journal entries and the Markdown syntax-->
+
 {#if title}
     <h1 class="text-3xl mb-3">{title}</h1>
 {:else}
