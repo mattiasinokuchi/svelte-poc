@@ -13,6 +13,7 @@
 import AddForm from './AddForm.svelte'
 import Renderer from './Renderer.svelte'
 import {view} from '../stores.js'
+import {fade} from 'svelte/transition'
 
 let content = ''
 let title = ''
