@@ -1,4 +1,4 @@
-<!-- This component ?-->
+<!-- This component makes what? -->
 
 <div in:fade>
     <Obj objectId={params.objectId} />

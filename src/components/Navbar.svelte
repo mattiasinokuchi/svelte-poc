@@ -7,14 +7,12 @@
     </div>
     <div class="pr-4 md:pr-0">
       <div class="my-4 inline-block">
-        <span class="ml-4 cursor-pointer {(active == 'home') ? 'text-blue-600 underline' : ''}"
-          on:click={() => $view = null}>
+        <a class="ml-4" use:active={{className: 'text-blue-600 underline'}} href="#/">
           Home
-        </span>
-        <span class="ml-4 cursor-pointer {(active == 'add') ? 'text-blue-600 underline' : ''}"
-          on:click={() => $view = 'add'}>
+        </a>
+        <a class="ml-4" use:active={{className: 'text-blue-600 underline'}} href="#/add">
           Add
-        </span>
+        </a>
       </div>
       {#if $isAuthenticated}
         <img src={$profile.picture}
@@ -28,18 +26,6 @@
 </nav>
 
 <script>
-import {profile, isAuthenticated, view} from '../stores.js' // view contains the name of the currently loaded view
-
-let active
-$: {  // block which marks a link in the navbar as active (updated when view changes)
-    switch ($view) {
-        case 'add':
-            active = $view
-            break
-
-        default:
-            active = 'home'
-            break
-    }
-}
+import active from 'svelte-spa-router/active'
+import {profile, isAuthenticated} from '../stores.js'
 </script>
