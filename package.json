@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --content-base public",
     "serve": "npx serve public",
     "test": "npx nightwatch",
-    "lint": "npx eslint -c .eslintrc.js –ext .js, .svelte, .html ."
+    "lint": "npx eslint -c .eslintrc.js --ext .js,.svelte,.html ."
   },
   "repository": {
     "type": "git",
