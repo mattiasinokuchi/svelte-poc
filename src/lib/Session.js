@@ -308,6 +308,7 @@ export async function HandleSession(maxAttempts) {
             return [null, '']
         }
         else {
+            // eslint-disable-next-line no-console
             console.error('No profile returned, but do not redirect because maximum attempts have passed')
         }
     }

@@ -71,6 +71,7 @@ async function submit() {
         dispatch('added', {objectId})
     }
     catch (err) {
+        // eslint-disable-next-line no-console
         console.error(err)
         formError = 'Request error: ' + err
     }

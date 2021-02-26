@@ -12,7 +12,7 @@ export async function LoadObject(oid, token) {
     const response = await fetch(process.env.API_URL + '/object/' + oid, {
         method: 'GET',
         headers: {
-            'Authorization': 'Bearer ' + token
+            Authorization: 'Bearer ' + token
         }
     })
     if (response.status < 200 || response.status >= 400) {
@@ -67,7 +67,7 @@ export async function LoadList(start, token) {
         method: 'POST',
         body: reqBody,
         headers: {
-            'Authorization': 'Bearer ' + token
+            Authorization: 'Bearer ' + token
         }
     })
     if (response.status < 200 || response.status >= 400) {
@@ -102,7 +102,7 @@ export async function AddRequest(title, content, token) {
         method: 'POST',
         body: formData,
         headers: {
-            'Authorization': 'Bearer ' + token
+            Authorization: 'Bearer ' + token
         }
     })
     if (response.status < 200 || response.status >= 400) {
