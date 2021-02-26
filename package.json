@@ -7,7 +7,8 @@
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server --content-base public",
     "serve": "npx serve public",
-    "test": "npx nightwatch"
+    "test": "npx nightwatch",
+    "lint": "npx eslint -c .eslintrc.js –ext .js, .svelte, .html ."
   },
   "repository": {
     "type": "git",
